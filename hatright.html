@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hat Move</title>
+</head>
+<body>
+
+	
+
+	<img src="off.png" alt="img" id="myImg" height="200px" width="200px">
+
+	<button onclick="hatRight()">Right</button>
+
+	<button onclick="hatRight()">Left</button>
+	<button onclick="hideHat()">Hide</button>
+	<button onclick="showHat()">Show</button>
+
+	<script>
+
+		document.getElementById('result').innerHTML=Date();
+
+		// function hatLeft(){
+
+		// 	document.getElementById('myImg').src="./on.png";
+		// }
+
+
+		function hatRight(){
+
+			document.getElementById('myImg').src="./off.png";
+		}
+
+
+
+
+		
+		function hideHat(){
+
+			document.getElementById('myImg').style.display='none';
+		}
+
+		function showHat(){
+
+			document.getElementById('myImg').style.display='block';
+
+		}
+
+	</script>
+
+</body>
+</html>
